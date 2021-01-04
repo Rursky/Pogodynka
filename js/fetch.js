@@ -1,3 +1,9 @@
+const currency = document.getElementById("currency")
+
+currency.addEventListener("change", function () {
+    document.getElementById("temp").innerText = `Prognoza 5 dniowa dla miasta: ${currency.value}`
+})
+
 const DOM_img = document.createElement("img");
 const DOM_img1 = document.createElement("img");
 const DOM_img2 = document.createElement("img");

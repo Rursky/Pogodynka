@@ -1,0 +1,44 @@
+/*///////////////////// global /////////////////////////////*/
+
+body {
+    background-color: black;
+    justify-items: center;
+    display: grid;
+    background-size: 100%;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+/*/////////////////////// id klasy ////////////////////////////*/
+
+.windows {
+  display: flex;
+  align-items: center;
+  /* align-content: center; */
+  justify-content: center;
+  width: 500px;
+  height: 120px;
+  background-color: lightgrey;
+  border-style: solid;
+  border-color:white;
+  border-width: 2px;
+  border-radius: 10px;
+  margin: 10px;
+  font-size: 18px;
+  color:black
+}
+
+#temp {
+  color:lightblue;
+  font-size: 20px;
+}
+

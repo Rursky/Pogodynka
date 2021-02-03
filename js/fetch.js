@@ -28,19 +28,19 @@ town.addEventListener("change", function () {
                 document.getElementById(outputs[j]).innerText = "Dzień: " + data.list[nums[j]].dt_txt + ", temperatura: " + ((data.list[nums[j]].main.temp)-273.15).toFixed(2) + "°c";
                 switch(true){
                     case (((data.list[nums[j]].main.temp)-273.15) < 0):
-                        images_temperature[j].src = "https://svgshare.com/getbyhash/sha1-pgVZNzECL/moe+8E8C6zGpLHHLs="
+                        images_temperature[j].src = "https://svgshare.com/i/SpP.svg"
                         break;
                     case ( (((data.list[nums[j]].main.temp)-273.15) >= 0) && (((data.list[nums[j]].main.temp)-273.15) < 5) ):
-                        images_temperature[j].src = "https://svgshare.com/getbyhash/sha1-erTcmRD/+pygI17D0Laqe09jlYU="
+                        images_temperature[j].src = "https://svgshare.com/i/SoK.svg"
                         break;
                     case ( (((data.list[nums[j]].main.temp)-273.15) >= 5) && (((data.list[nums[j]].main.temp)-273.15) < 15) ):
-                        images_temperature[j].src = "https://svgshare.com/getbyhash/sha1-vmHVc9B7LqtQstwyH4Rnyc9lPIs="
+                        images_temperature[j].src = "https://svgshare.com/i/SoL.svg"
                         break;
                     case ( (((data.list[nums[j]].main.temp)-273.15) >= 15) && (((data.list[nums[j]].main.temp)-273.15) < 27) ):
-                        images_temperature[j].src = "https://svgshare.com/getbyhash/sha1-p/plJ4g+zdMEcfsgD0/CNL05vLg="
+                        images_temperature[j].src = "https://svgshare.com/i/Snd.svg"
                         break;
                     case (((data.list[nums[j]].main.temp)-273.15) >= 27):
-                        images_temperature[j].src = "https://svgshare.com/getbyhash/sha1-JWWlgjTlz97B1sZguAvp0cNgtWM="
+                        images_temperature[j].src = "https://svgshare.com/i/SoM.svg"
                         break;
                 }
             }
